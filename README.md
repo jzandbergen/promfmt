@@ -37,7 +37,7 @@ go build
 
 ## Copyright
 
-The parser code is shamelessly copied from the prometheus source code which
+The parser code is shamelessly copied from the [prometheus source code](https://github.com/prometheus/prometheus) which
 is licensed under the apache license. I've only copied it because I needed
 to access an unexported variable.
 
