@@ -11,14 +11,6 @@ import (
 )
 
 func main() {
-	fi, _ := os.Stdin.Stat()
-
-	if (fi.Mode() & os.ModeCharDevice) == 0 {
-		fmt.Println("data is from pipe")
-	} else {
-		fmt.Println("data is from terminal")
-	}
-
 	// we read from stdin
 	reader := bufio.NewReader(os.Stdin)
 	buf := make([]byte, 0, 4*1024)
